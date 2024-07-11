@@ -56,6 +56,6 @@ function time_keeper_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function time_keeper_customize_preview_js() {
-	wp_enqueue_script( 'time-keeper-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'time-keeper-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), TIME_VERSION, true );
 }
 add_action( 'customize_preview_init', 'time_keeper_customize_preview_js' );

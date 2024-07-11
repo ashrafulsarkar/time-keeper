@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'time_keeper_woocommerce_setup' );
  * @return void
  */
 function time_keeper_woocommerce_scripts() {
-	wp_enqueue_style( 'time-keeper-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
+	wp_enqueue_style( 'time-keeper-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), TIME_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
